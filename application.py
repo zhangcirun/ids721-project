@@ -7,7 +7,7 @@ def hello_world():
 
 @application.route('/text')
 def some_text():
-    return "some text.."
+    return "some text...."
 
 if __name__ == "__main__":
     application.run()
