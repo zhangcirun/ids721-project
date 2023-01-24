@@ -1,0 +1,7 @@
+black
+pylint
+pytest
+click
+pytest-cov
+ipython
+flask
