@@ -3,9 +3,9 @@ install:
 		pip install -r requirements.txt
 
 format:	
-	black *.py
+	black project1/*.py
 
 lint:
-	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
+	pylint --disable=R,C --ignore-patterns=test_.*?py project1/*.py
 
 all: install format lint
