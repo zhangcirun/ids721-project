@@ -10,11 +10,11 @@ def n_queens(n):
     n = (int)(n)
     if n > 8 or n < 1:
         return "please enter number from 1 to 8"
-    head = '<h1>Solving ' + str(n) + ' Queens Problem</h1>\n\n';
+    head = '<h1>Solving ' + str(n) + ' Queens Problem</h1>\n\n'
     head += 'The eight queens puzzle is the problem of placing eight chess queens on an 8×8 chessboard so that no two queens threaten each other; thus, a solution requires that no two queens share the same row, column, or diagonal. There are 92 solutions. The problem was first posed in the mid-19th century. In the modern era, it is often used as an example problem for various computer programming techniques'
-    body = solve(n);
+    body = solve(n)
 
-    return head + body;
+    return head + body
 
 def solve(n):
     arr = [['.'] * n for i in range(n)]
@@ -25,17 +25,17 @@ def solve(n):
     s = '<pre>'
     for result in ans:
         s += result
-    return s;
+    return s
 
 def render(arr:list):
-    str = ''
+    str1 = ''
     for row in arr:
         for ele in row:
-            str += ele
-            str += ' '
-        str += '<br>'
-    str += '<br>'
-    return str
+            str1 += ele
+            str1 += ' '
+        str1 += '<br>'
+    str1 += '<br>'
+    return str1
 
 def dfs(index:int, n:int, numQueens:int, arr:list, visitRows:set, visitCols:set, visitDiag:set, visitAnti:set, ans:list):
     if (n == numQueens):
