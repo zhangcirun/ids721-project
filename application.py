@@ -3,7 +3,7 @@ application = Flask(__name__)
 
 @application.route('/')
 def hello_world():
-    return "QQ: 1397611086"
+    return "QQ: 1307256288"
 
 @application.route('/nqueens/<n>')
 def n_queens(n):
